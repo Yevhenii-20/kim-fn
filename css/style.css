@@ -268,7 +268,6 @@ body {
 
 .flex__select {
     display: flex;
-    align-items: stretch;
 }
 
 .custom__select__name {
@@ -296,6 +295,7 @@ body {
 .search-form_box input, .search-form_box select {
     padding-top: 13px;
     padding-bottom: 13px;
+    height: 43px;
 }
 
 /* BANNER SECTION */
@@ -603,13 +603,15 @@ input {
     padding: 10px 12px;
     background-color: #fff;
     color: #333;
+    border-radius: 0px;
+    height: auto;
 }
 
 
 select {
     border: 1px solid #d8dee0;
     padding: 10px 12px;
-
+    border-radius: 0px;
     -webkit-appearance: none;
     color: #333;
     background: url(../img/select-arrow.svg);
