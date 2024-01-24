@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/result.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__flex">
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div>
+                    <div class="header-mobile__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header__navigation">
+                        <a href="#">Kopen</a>
+                        <a href="#">Huren</a>
+                        <a href="#">Verkopen</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" role="presentation" viewBox="0 0 48 48" class="flex mr-1 -mt-1 md:inline"><path d="M34.718 23.938l3 3.332v15.326a1.5 1.5 0 01-1.497 1.5H11.218a1.5 1.5 0 01-1.5-1.5V27.271l3-3.332v17.157h22V23.938zM23.735 4.998c.082.002.163.02.244.035.1.018.2.036.296.074.099.04.19.103.28.166.069.047.14.09.2.15.026.023.06.033.084.06L42.05 24.6a1.5 1.5 0 01-2.229 2.008l-2.106-2.339-3-3.332-11-12.216-11 12.217-3 3.332-2.101 2.333a1.5 1.5 0 01-2.23-2.007L22.598 5.48c.028-.032.068-.045.098-.073.039-.036.083-.06.125-.093.116-.089.237-.167.368-.217.06-.023.122-.032.184-.046.12-.029.24-.052.362-.052z"></path></svg>
+                    <span>Mijn Huis</span>
+                </a>
+                <a href="#" class="header__right-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" role="presentation" viewBox="0 0 24 24" class="flex mr-1 -mt-1 md:inline"><path d="M2 12C2 6.20101 6.70101 1.5 12.5 1.5C15.2848 1.5 17.9555 2.60625 19.9246 4.57538C21.8938 6.54451 23 9.21523 23 12C23 12.4258 22.9747 12.8457 22.9254 13.2583C22.5136 12.7806 22.0335 12.3634 21.5003 12.022C21.5054 10.9315 21.3122 9.82972 20.9076 8.7704C19.5761 5.28449 16.2315 2.9818 12.5 2.9818C8.76846 2.9818 5.42395 5.28449 4.09245 8.7704C2.76095 12.2563 3.71867 16.2023 6.5 18.69V17.25C6.5008 17.1823 6.51089 17.115 6.53 17.05C6.78 15.055 8.685 13.5 11 13.5H12.8762C12.5203 13.9552 12.2237 14.4591 11.9982 15H11C10.8175 15.0011 10.6353 15.0161 10.455 15.045C9.06 15.26 8 16.275 8 17.5V19.78C9.39622 20.5952 10.9586 21.001 12.5202 20.9975C12.862 21.5318 13.2797 22.0129 13.7583 22.4254C13.3457 22.4747 12.9258 22.5 12.5 22.5C6.70101 22.5 2 17.799 2 12Z"></path><path fill-rule="evenodd" d="M8.5 8.5C8.5 6.29086 10.2909 4.5 12.5 4.5C13.5609 4.5 14.5783 4.92143 15.3284 5.67157C16.0786 6.42172 16.5 7.43913 16.5 8.5C16.5 10.7091 14.7091 12.5 12.5 12.5C10.2909 12.5 8.5 10.7091 8.5 8.5ZM10 8.5C10 9.88071 11.1193 11 12.5 11C13.8807 11 15 9.88071 15 8.5C15 7.11929 13.8807 6 12.5 6C11.1193 6 10 7.11929 10 8.5Z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M18.0044 22.5044C20.7658 22.5044 23.0044 20.2658 23.0044 17.5044C23.0044 14.743 20.7658 12.5044 18.0044 12.5044C15.243 12.5044 13.0044 14.743 13.0044 17.5044C13.0044 20.2658 15.243 22.5044 18.0044 22.5044ZM20.0347 15.4741C20.3276 15.767 20.3276 16.2418 20.0347 16.5347L19.0651 17.5044L20.0347 18.4741C20.3276 18.767 20.3276 19.2418 20.0347 19.5347C19.7418 19.8276 19.267 19.8276 18.9741 19.5347L18.0044 18.5651L17.0347 19.5347C16.7418 19.8276 16.267 19.8276 15.9741 19.5347C15.6812 19.2418 15.6812 18.767 15.9741 18.4741L16.9437 17.5044L15.9741 16.5347C15.6812 16.2418 15.6812 15.767 15.9741 15.4741C16.267 15.1812 16.7418 15.1812 17.0347 15.4741L18.0044 16.4437L18.9741 15.4741C19.267 15.1812 19.7418 15.1812 20.0347 15.4741Z" clip-rule="evenodd"></path></svg>
+                    <span>Inloggen</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <section class="section__result">
+            <div class="container result__flex">
+                <div class="result__filters">
+                    <div class="result-filters__title">Filters</div>
+                    <div class="result-filters__switch">
+                        <div class="active">Koop</div>
+                        <div>Huur</div>
+                    </div>
+
+                    <div class="result-filters__box result-filters__select">
+                        <div class="filters-box__title">Prijs</div>
+                        <div class="filters__select_flex">
+                            <select>
+                                <option value="other">Anders</option>
+                                <option selected="" data-range-filter-selector-default-value="" value="0">€ 0</option>
+                                <option value="50000">€ 50.000</option>
+                                <option value="75000">€ 75.000</option>
+                                <option value="100000">€ 100.000</option>
+                                <option value="125000">€ 125.000</option>
+                                <option value="150000">€ 150.000</option>
+                                <option value="175000">€ 175.000</option>
+                                <option value="200000">€ 200.000</option>
+                                <option value="225000">€ 225.000</option>
+                                <option value="250000">€ 250.000</option>
+                                <option value="275000">€ 275.000</option>
+                                <option value="300000">€ 300.000</option>
+                                <option value="325000">€ 325.000</option>
+                                <option value="350000">€ 350.000</option>
+                                <option value="375000">€ 375.000</option>
+                                <option value="400000">€ 400.000</option>
+                                <option value="450000">€ 450.000</option>
+                                <option value="500000">€ 500.000</option>
+                                <option value="550000">€ 550.000</option>
+                                <option value="600000">€ 600.000</option>
+                                <option value="650000">€ 650.000</option>
+                                <option value="700000">€ 700.000</option>
+                                <option value="750000">€ 750.000</option>
+                                <option value="800000">€ 800.000</option>
+                                <option value="900000">€ 900.000</option>
+                                <option value="1000000">€ 1.000.000</option>
+                                <option value="1250000">€ 1.250.000</option>
+                                <option value="1500000">€ 1.500.000</option>
+                                <option value="2000000">€ 2.000.000</option>
+                                <option value="2500000">€ 2.500.000</option>
+                                <option value="3000000">€ 3.000.000</option>
+                                <option value="3500000">€ 3.500.000</option>
+                                <option value="4000000">€ 4.000.000</option>
+                                <option value="4500000">€ 4.500.000</option>
+                                <option value="5000000">€ 5.000.000</option>
+                            </select>
+                            <div>tot</div>
+                            <select>
+                                <option value="other">Anders</option>
+                                <option value="50000">€ 50.000</option>
+                                <option value="75000">€ 75.000</option>
+                                <option value="100000">€ 100.000</option>
+                                <option value="125000">€ 125.000</option>
+                                <option value="150000">€ 150.000</option>
+                                <option value="175000">€ 175.000</option>
+                                <option value="200000">€ 200.000</option>
+                                <option value="225000">€ 225.000</option>
+                                <option value="250000">€ 250.000</option>
+                                <option value="275000">€ 275.000</option>
+                                <option value="300000">€ 300.000</option>
+                                <option value="325000">€ 325.000</option>
+                                <option value="350000">€ 350.000</option>
+                                <option value="375000">€ 375.000</option>
+                                <option value="400000">€ 400.000</option>
+                                <option value="450000">€ 450.000</option>
+                                <option value="500000">€ 500.000</option>
+                                <option value="550000">€ 550.000</option>
+                                <option value="600000">€ 600.000</option>
+                                <option value="650000">€ 650.000</option>
+                                <option value="700000">€ 700.000</option>
+                                <option value="750000">€ 750.000</option>
+                                <option value="800000">€ 800.000</option>
+                                <option value="900000">€ 900.000</option>
+                                <option value="1000000">€ 1.000.000</option>
+                                <option value="1250000">€ 1.250.000</option>
+                                <option value="1500000">€ 1.500.000</option>
+                                <option value="2000000">€ 2.000.000</option>
+                                <option value="2500000">€ 2.500.000</option>
+                                <option value="3000000">€ 3.000.000</option>
+                                <option value="3500000">€ 3.500.000</option>
+                                <option value="4000000">€ 4.000.000</option>
+                                <option value="4500000">€ 4.500.000</option>
+                                <option value="5000000">€ 5.000.000</option>
+                                <option selected="" data-range-filter-selector-default-value="" value="ignore_filter">Geen max</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="result-filters__box result-filters__checkbox">
+                        <div class="filters-box__title">Soort aanbod</div>
+                        <div class="filters-checkbox__box">
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house" type="checkbox" class="checkbox">
+                                    <label for="object_type-house" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house" type="checkbox" class="checkbox">
+                                    <label for="object_type-house" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house" type="checkbox" class="checkbox">
+                                    <label for="object_type-house" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house" type="checkbox" class="checkbox">
+                                    <label for="object_type-house" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filters__meer">
+                            Toon meer (9)
+                        </div>
+                    </div>
+
+                    <div class="result-filters__box result-filters__checkbox">
+                        <div class="filters-box__title">Soort aanbod</div>
+                        <div class="filters-checkbox__box">
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-filters__box result-filters__select">
+                        <div class="filters-box__title">Prijs</div>
+                        <div class="filters__select_flex">
+                            <select>
+                                <option value="other">Anders</option>
+                                <option selected="" data-range-filter-selector-default-value="" value="0">€ 0</option>
+                                <option value="50000">€ 50.000</option>
+                                <option value="75000">€ 75.000</option>
+                                <option value="100000">€ 100.000</option>
+                                <option value="125000">€ 125.000</option>
+                                <option value="150000">€ 150.000</option>
+                                <option value="175000">€ 175.000</option>
+                                <option value="200000">€ 200.000</option>
+                                <option value="225000">€ 225.000</option>
+                                <option value="250000">€ 250.000</option>
+                                <option value="275000">€ 275.000</option>
+                                <option value="300000">€ 300.000</option>
+                                <option value="325000">€ 325.000</option>
+                                <option value="350000">€ 350.000</option>
+                                <option value="375000">€ 375.000</option>
+                                <option value="400000">€ 400.000</option>
+                                <option value="450000">€ 450.000</option>
+                                <option value="500000">€ 500.000</option>
+                                <option value="550000">€ 550.000</option>
+                                <option value="600000">€ 600.000</option>
+                                <option value="650000">€ 650.000</option>
+                                <option value="700000">€ 700.000</option>
+                                <option value="750000">€ 750.000</option>
+                                <option value="800000">€ 800.000</option>
+                                <option value="900000">€ 900.000</option>
+                                <option value="1000000">€ 1.000.000</option>
+                                <option value="1250000">€ 1.250.000</option>
+                                <option value="1500000">€ 1.500.000</option>
+                                <option value="2000000">€ 2.000.000</option>
+                                <option value="2500000">€ 2.500.000</option>
+                                <option value="3000000">€ 3.000.000</option>
+                                <option value="3500000">€ 3.500.000</option>
+                                <option value="4000000">€ 4.000.000</option>
+                                <option value="4500000">€ 4.500.000</option>
+                                <option value="5000000">€ 5.000.000</option>
+                            </select>
+                            <div>tot</div>
+                            <select>
+                                <option value="other">Anders</option>
+                                <option value="50000">€ 50.000</option>
+                                <option value="75000">€ 75.000</option>
+                                <option value="100000">€ 100.000</option>
+                                <option value="125000">€ 125.000</option>
+                                <option value="150000">€ 150.000</option>
+                                <option value="175000">€ 175.000</option>
+                                <option value="200000">€ 200.000</option>
+                                <option value="225000">€ 225.000</option>
+                                <option value="250000">€ 250.000</option>
+                                <option value="275000">€ 275.000</option>
+                                <option value="300000">€ 300.000</option>
+                                <option value="325000">€ 325.000</option>
+                                <option value="350000">€ 350.000</option>
+                                <option value="375000">€ 375.000</option>
+                                <option value="400000">€ 400.000</option>
+                                <option value="450000">€ 450.000</option>
+                                <option value="500000">€ 500.000</option>
+                                <option value="550000">€ 550.000</option>
+                                <option value="600000">€ 600.000</option>
+                                <option value="650000">€ 650.000</option>
+                                <option value="700000">€ 700.000</option>
+                                <option value="750000">€ 750.000</option>
+                                <option value="800000">€ 800.000</option>
+                                <option value="900000">€ 900.000</option>
+                                <option value="1000000">€ 1.000.000</option>
+                                <option value="1250000">€ 1.250.000</option>
+                                <option value="1500000">€ 1.500.000</option>
+                                <option value="2000000">€ 2.000.000</option>
+                                <option value="2500000">€ 2.500.000</option>
+                                <option value="3000000">€ 3.000.000</option>
+                                <option value="3500000">€ 3.500.000</option>
+                                <option value="4000000">€ 4.000.000</option>
+                                <option value="4500000">€ 4.500.000</option>
+                                <option value="5000000">€ 5.000.000</option>
+                                <option selected="" data-range-filter-selector-default-value="" value="ignore_filter">Geen max</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="result-filters__box result-filters__checkbox">
+                        <div class="filters-box__title">Soort aanbod</div>
+                        <div class="filters-checkbox__box">
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                            <div class="filters-checkbox__flex">
+                                <div class="checkbox__flex">
+                                    <input id="object_type-house1" type="radio" class="checkbox">
+                                    <label for="object_type-house1" class="checkbox__title hover-filter">
+                                        Woonhuis
+                                    </label>
+                                </div>
+                                <div>
+                                    41.977
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result__items">
+                    <div class="top__result">
+                        <a href="#" class="top__result-box">
+                            <div class="top__result-box-img">
+                                <span class="top__result-overlay"></span>
+                                <img src="./img/res1.jpeg" alt="">
+                                <div class="top__result__detail">
+                                    <span class="top__result__name">1 (Bouwnr. 1)</span>
+                                    <span class="top__result__price">€ 795.850 v.o.n.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="top__result-box-button">Van Dullink NVM Makelaars </div>
+                        </a>
+                        <a href="#" class="top__result-box">
+                            <div class="top__result-box-img">
+                                <span class="top__result-overlay"></span>
+                                <img src="./img/res1.jpeg" alt="">
+                                <div class="top__result__detail">
+                                    <span class="top__result__name">1 (Bouwnr. 1)</span>
+                                    <span class="top__result__price">€ 795.850 v.o.n.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="top__result-box-button">Van Dullink NVM Makelaars </div>
+                        </a>
+                        <a href="#" class="top__result-box">
+                            <div class="top__result-box-img">
+                                <span class="top__result-overlay"></span>
+                                <img src="./img/res1.jpeg" alt="">
+                                <div class="top__result__detail">
+                                    <span class="top__result__name">1 (Bouwnr. 1)</span>
+                                    <span class="top__result__price">€ 795.850 v.o.n.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="top__result-box-button">Van Dullink NVM Makelaars </div>
+                        </a>
+                    </div>
+                    <div class="result__box">
+                        <div class="like__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" alt="Huis bewaren" class="text-blue-2"><path d="M39 9.86A10.17 10.17 0 0032 7a9.9 9.9 0 00-6 2 10.1 10.1 0 00-2 2 10.1 10.1 0 00-2-2 9.91 9.91 0 00-12 0 9.9 9.9 0 00-4 8c0 15 16 24 18 24s18-9 18-24a10 10 0 00-3-7.14zm-15 28a29.61 29.61 0 01-12.72-12.1A18.77 18.77 0 019 17a7 7 0 0113.41-2.81c.06.14.11.29.17.44a1.49 1.49 0 002.82 0c.05-.15.11-.3.17-.44A7 7 0 0139 17a18.77 18.77 0 01-2.28 8.81A29.61 29.61 0 0124 37.91z"></path></svg>
+                        </div>
+                        <a href="#" class="result-box__img">
+                            <span class="result-box__img-overlay"></span>
+                            <img src="./img/res1.jpeg" alt="">
+                            <div class="result-box__img-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 7.5A1.5 1.5 0 0040.5 6h-33A1.5 1.5 0 006 7.5v33A1.5 1.5 0 007.5 42H18v-3H9V9h30v30h-7.76L20.8 28.56l-2.12 2.12L30 42h10.5a1.5 1.5 0 001.5-1.5v-33z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 9.5A1.5 1.5 0 0040.5 8h-10A1.5 1.5 0 0029 9.5v10a1.5 1.5 0 003 0v-7a14 14 0 11-8-2.5V7a17 17 0 1010.92 4h5.58A1.5 1.5 0 0042 9.5z" data-name="360"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M39.16 23.19a1.48 1.48 0 00-.51-.48l-.11-.09L13.32 6.24l-.16-.08h-.09l-.18-.06h-.11L12.6 6H12.19a1.49 1.49 0 00-1 .65 1.47 1.47 0 00-.1.2 1.46 1.46 0 00-.07.21v.08a1.48 1.48 0 000 .2V40.52a1.49 1.49 0 000 .2v.08a1.46 1.46 0 00.07.21 1.48 1.48 0 00.11.21 1.49 1.49 0 001 .65H12.9l.18-.06h.08l.16-.08 25.41-16.5a1.5 1.5 0 00.43-2.04zM14 10.26L35.16 24 14 37.74z"></path></svg>
+                            </div>
+                            <span class="result-box__new">
+                                Nieuw
+                            </span>
+                        </a>
+                        <div class="result__box__info">
+                            <div class="result__box__name">Kersenlaan 42</div>
+                            <div class="result__box__address">7322 SE Apeldoorn</div>
+                            <div class="result__box__price">€ 325.000 k.k.</div>
+                            <div class="result__box__detail">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M38.5 32.25v-16.5a5 5 0 10-6.25-6.25h-16.5a5 5 0 10-6.25 6.25v16.5a5 5 0 106.25 6.25h16.5a5 5 0 106.25-6.25zm-6.25 3.25h-16.5a5 5 0 00-3.25-3.25v-16.5a5 5 0 003.25-3.25h16.5a5 5 0 003.25 3.25v16.5a5 5 0 00-3.25 3.25zM37 9a2 2 0 11-2 2 2 2 0 012-2zM11 9a2 2 0 11-2 2 2 2 0 012-2zm0 30a2 2 0 112-2 2 2 0 01-2 2zm26 0a2 2 0 112-2 2 2 0 01-2 2z"></path></svg>
+                                    <span>92 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M43 5.5A1.5 1.5 0 0041.5 4h-35A1.5 1.5 0 005 5.5v37A1.5 1.5 0 006.5 44h35a1.5 1.5 0 001.5-1.5zm-35 9h13v5a1.5 1.5 0 001.5 1.5H30v20H8zm25 5a1.5 1.5 0 00-1.5-1.5H24v-5a1.5 1.5 0 00-1.5-1.5H8V7h32v34h-7z"></path></svg>
+                                    <span>136 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M11 20l-3.999 5.999h33.998L37 20h3l3.999 5.999L44 26v9.5a1.5 1.5 0 01-1.5 1.5H39v1.5a1.5 1.5 0 01-3 0V37H12v1.5a1.5 1.5 0 01-3 0V37H5.5A1.5 1.5 0 014 35.5V26l.001-.001L8 20h3zm30 9H7v5h34v-5zM38.5 8A1.5 1.5 0 0140 9.5V20l-9-.001V21.5a1.5 1.5 0 01-1.5 1.5h-11a1.5 1.5 0 01-1.5-1.5v-1.501L8 20V9.5A1.5 1.5 0 019.5 8h29zM28 17h-8v3h8v-3zm9-6H11v5.999h6V15.5a1.5 1.5 0 011.5-1.5h11a1.5 1.5 0 011.5 1.5v1.499h6V11z"></path></svg>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M23.675 12.891l-6.852 13.063 7.032 1.628.492 7.872 7.31-13.373-7.51-1.63-.472-7.56zm2.45-8.897L27 18l6.274 1.362c1.62.351 2.295 1.818 1.5 3.274l-11.82 21.618c-.529.968-1.01.853-1.079-.248L21 30l-5.714-1.323c-1.612-.373-2.3-1.868-1.529-3.337L25.073 3.767c.511-.975.983-.874 1.052.227z"></path></svg>
+                                    <span>C</span>
+                                </div>
+                            </div>
+                            <a href="#" class="result-box__link">Mulderij Makelaardij & Taxateur O.Z.</a>
+                        </div>
+                    </div>
+
+                    <div class="result__box">
+                        <div class="like__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" alt="Huis bewaren" class="text-blue-2"><path d="M39 9.86A10.17 10.17 0 0032 7a9.9 9.9 0 00-6 2 10.1 10.1 0 00-2 2 10.1 10.1 0 00-2-2 9.91 9.91 0 00-12 0 9.9 9.9 0 00-4 8c0 15 16 24 18 24s18-9 18-24a10 10 0 00-3-7.14zm-15 28a29.61 29.61 0 01-12.72-12.1A18.77 18.77 0 019 17a7 7 0 0113.41-2.81c.06.14.11.29.17.44a1.49 1.49 0 002.82 0c.05-.15.11-.3.17-.44A7 7 0 0139 17a18.77 18.77 0 01-2.28 8.81A29.61 29.61 0 0124 37.91z"></path></svg>
+                        </div>
+                        <a href="#" class="result-box__img">
+                            <span class="result-box__img-overlay"></span>
+                            <img src="./img/res1.jpeg" alt="">
+                            <div class="result-box__img-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 7.5A1.5 1.5 0 0040.5 6h-33A1.5 1.5 0 006 7.5v33A1.5 1.5 0 007.5 42H18v-3H9V9h30v30h-7.76L20.8 28.56l-2.12 2.12L30 42h10.5a1.5 1.5 0 001.5-1.5v-33z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 9.5A1.5 1.5 0 0040.5 8h-10A1.5 1.5 0 0029 9.5v10a1.5 1.5 0 003 0v-7a14 14 0 11-8-2.5V7a17 17 0 1010.92 4h5.58A1.5 1.5 0 0042 9.5z" data-name="360"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M39.16 23.19a1.48 1.48 0 00-.51-.48l-.11-.09L13.32 6.24l-.16-.08h-.09l-.18-.06h-.11L12.6 6H12.19a1.49 1.49 0 00-1 .65 1.47 1.47 0 00-.1.2 1.46 1.46 0 00-.07.21v.08a1.48 1.48 0 000 .2V40.52a1.49 1.49 0 000 .2v.08a1.46 1.46 0 00.07.21 1.48 1.48 0 00.11.21 1.49 1.49 0 001 .65H12.9l.18-.06h.08l.16-.08 25.41-16.5a1.5 1.5 0 00.43-2.04zM14 10.26L35.16 24 14 37.74z"></path></svg>
+                            </div>
+                            <span class="result-box__new">
+                                Nieuw
+                            </span>
+                        </a>
+                        <div class="result__box__info">
+                            <div class="result__box__name">Kersenlaan 42</div>
+                            <div class="result__box__address">7322 SE Apeldoorn</div>
+                            <div class="result__box__price">€ 325.000 k.k.</div>
+                            <div class="result__box__detail">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M38.5 32.25v-16.5a5 5 0 10-6.25-6.25h-16.5a5 5 0 10-6.25 6.25v16.5a5 5 0 106.25 6.25h16.5a5 5 0 106.25-6.25zm-6.25 3.25h-16.5a5 5 0 00-3.25-3.25v-16.5a5 5 0 003.25-3.25h16.5a5 5 0 003.25 3.25v16.5a5 5 0 00-3.25 3.25zM37 9a2 2 0 11-2 2 2 2 0 012-2zM11 9a2 2 0 11-2 2 2 2 0 012-2zm0 30a2 2 0 112-2 2 2 0 01-2 2zm26 0a2 2 0 112-2 2 2 0 01-2 2z"></path></svg>
+                                    <span>92 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M43 5.5A1.5 1.5 0 0041.5 4h-35A1.5 1.5 0 005 5.5v37A1.5 1.5 0 006.5 44h35a1.5 1.5 0 001.5-1.5zm-35 9h13v5a1.5 1.5 0 001.5 1.5H30v20H8zm25 5a1.5 1.5 0 00-1.5-1.5H24v-5a1.5 1.5 0 00-1.5-1.5H8V7h32v34h-7z"></path></svg>
+                                    <span>136 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M11 20l-3.999 5.999h33.998L37 20h3l3.999 5.999L44 26v9.5a1.5 1.5 0 01-1.5 1.5H39v1.5a1.5 1.5 0 01-3 0V37H12v1.5a1.5 1.5 0 01-3 0V37H5.5A1.5 1.5 0 014 35.5V26l.001-.001L8 20h3zm30 9H7v5h34v-5zM38.5 8A1.5 1.5 0 0140 9.5V20l-9-.001V21.5a1.5 1.5 0 01-1.5 1.5h-11a1.5 1.5 0 01-1.5-1.5v-1.501L8 20V9.5A1.5 1.5 0 019.5 8h29zM28 17h-8v3h8v-3zm9-6H11v5.999h6V15.5a1.5 1.5 0 011.5-1.5h11a1.5 1.5 0 011.5 1.5v1.499h6V11z"></path></svg>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M23.675 12.891l-6.852 13.063 7.032 1.628.492 7.872 7.31-13.373-7.51-1.63-.472-7.56zm2.45-8.897L27 18l6.274 1.362c1.62.351 2.295 1.818 1.5 3.274l-11.82 21.618c-.529.968-1.01.853-1.079-.248L21 30l-5.714-1.323c-1.612-.373-2.3-1.868-1.529-3.337L25.073 3.767c.511-.975.983-.874 1.052.227z"></path></svg>
+                                    <span>C</span>
+                                </div>
+                            </div>
+                            <a href="#" class="result-box__link">Mulderij Makelaardij & Taxateur O.Z.</a>
+                        </div>
+                    </div>
+
+                    <div class="result__box">
+                        <div class="like__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" alt="Huis bewaren" class="text-blue-2"><path d="M39 9.86A10.17 10.17 0 0032 7a9.9 9.9 0 00-6 2 10.1 10.1 0 00-2 2 10.1 10.1 0 00-2-2 9.91 9.91 0 00-12 0 9.9 9.9 0 00-4 8c0 15 16 24 18 24s18-9 18-24a10 10 0 00-3-7.14zm-15 28a29.61 29.61 0 01-12.72-12.1A18.77 18.77 0 019 17a7 7 0 0113.41-2.81c.06.14.11.29.17.44a1.49 1.49 0 002.82 0c.05-.15.11-.3.17-.44A7 7 0 0139 17a18.77 18.77 0 01-2.28 8.81A29.61 29.61 0 0124 37.91z"></path></svg>
+                        </div>
+                        <a href="#" class="result-box__img">
+                            <span class="result-box__img-overlay"></span>
+                            <img src="./img/res1.jpeg" alt="">
+                            <div class="result-box__img-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 7.5A1.5 1.5 0 0040.5 6h-33A1.5 1.5 0 006 7.5v33A1.5 1.5 0 007.5 42H18v-3H9V9h30v30h-7.76L20.8 28.56l-2.12 2.12L30 42h10.5a1.5 1.5 0 001.5-1.5v-33z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 9.5A1.5 1.5 0 0040.5 8h-10A1.5 1.5 0 0029 9.5v10a1.5 1.5 0 003 0v-7a14 14 0 11-8-2.5V7a17 17 0 1010.92 4h5.58A1.5 1.5 0 0042 9.5z" data-name="360"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M39.16 23.19a1.48 1.48 0 00-.51-.48l-.11-.09L13.32 6.24l-.16-.08h-.09l-.18-.06h-.11L12.6 6H12.19a1.49 1.49 0 00-1 .65 1.47 1.47 0 00-.1.2 1.46 1.46 0 00-.07.21v.08a1.48 1.48 0 000 .2V40.52a1.49 1.49 0 000 .2v.08a1.46 1.46 0 00.07.21 1.48 1.48 0 00.11.21 1.49 1.49 0 001 .65H12.9l.18-.06h.08l.16-.08 25.41-16.5a1.5 1.5 0 00.43-2.04zM14 10.26L35.16 24 14 37.74z"></path></svg>
+                            </div>
+                            <span class="result-box__new">
+                                Nieuw
+                            </span>
+                        </a>
+                        <div class="result__box__info">
+                            <div class="result__box__name">Kersenlaan 42</div>
+                            <div class="result__box__address">7322 SE Apeldoorn</div>
+                            <div class="result__box__price">€ 325.000 k.k.</div>
+                            <div class="result__box__detail">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M38.5 32.25v-16.5a5 5 0 10-6.25-6.25h-16.5a5 5 0 10-6.25 6.25v16.5a5 5 0 106.25 6.25h16.5a5 5 0 106.25-6.25zm-6.25 3.25h-16.5a5 5 0 00-3.25-3.25v-16.5a5 5 0 003.25-3.25h16.5a5 5 0 003.25 3.25v16.5a5 5 0 00-3.25 3.25zM37 9a2 2 0 11-2 2 2 2 0 012-2zM11 9a2 2 0 11-2 2 2 2 0 012-2zm0 30a2 2 0 112-2 2 2 0 01-2 2zm26 0a2 2 0 112-2 2 2 0 01-2 2z"></path></svg>
+                                    <span>92 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M43 5.5A1.5 1.5 0 0041.5 4h-35A1.5 1.5 0 005 5.5v37A1.5 1.5 0 006.5 44h35a1.5 1.5 0 001.5-1.5zm-35 9h13v5a1.5 1.5 0 001.5 1.5H30v20H8zm25 5a1.5 1.5 0 00-1.5-1.5H24v-5a1.5 1.5 0 00-1.5-1.5H8V7h32v34h-7z"></path></svg>
+                                    <span>136 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M11 20l-3.999 5.999h33.998L37 20h3l3.999 5.999L44 26v9.5a1.5 1.5 0 01-1.5 1.5H39v1.5a1.5 1.5 0 01-3 0V37H12v1.5a1.5 1.5 0 01-3 0V37H5.5A1.5 1.5 0 014 35.5V26l.001-.001L8 20h3zm30 9H7v5h34v-5zM38.5 8A1.5 1.5 0 0140 9.5V20l-9-.001V21.5a1.5 1.5 0 01-1.5 1.5h-11a1.5 1.5 0 01-1.5-1.5v-1.501L8 20V9.5A1.5 1.5 0 019.5 8h29zM28 17h-8v3h8v-3zm9-6H11v5.999h6V15.5a1.5 1.5 0 011.5-1.5h11a1.5 1.5 0 011.5 1.5v1.499h6V11z"></path></svg>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M23.675 12.891l-6.852 13.063 7.032 1.628.492 7.872 7.31-13.373-7.51-1.63-.472-7.56zm2.45-8.897L27 18l6.274 1.362c1.62.351 2.295 1.818 1.5 3.274l-11.82 21.618c-.529.968-1.01.853-1.079-.248L21 30l-5.714-1.323c-1.612-.373-2.3-1.868-1.529-3.337L25.073 3.767c.511-.975.983-.874 1.052.227z"></path></svg>
+                                    <span>C</span>
+                                </div>
+                            </div>
+                            <a href="#" class="result-box__link">Mulderij Makelaardij & Taxateur O.Z.</a>
+                        </div>
+                    </div>
+
+                    <div class="result__box">
+                        <div class="like__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" alt="Huis bewaren" class="text-blue-2"><path d="M39 9.86A10.17 10.17 0 0032 7a9.9 9.9 0 00-6 2 10.1 10.1 0 00-2 2 10.1 10.1 0 00-2-2 9.91 9.91 0 00-12 0 9.9 9.9 0 00-4 8c0 15 16 24 18 24s18-9 18-24a10 10 0 00-3-7.14zm-15 28a29.61 29.61 0 01-12.72-12.1A18.77 18.77 0 019 17a7 7 0 0113.41-2.81c.06.14.11.29.17.44a1.49 1.49 0 002.82 0c.05-.15.11-.3.17-.44A7 7 0 0139 17a18.77 18.77 0 01-2.28 8.81A29.61 29.61 0 0124 37.91z"></path></svg>
+                        </div>
+                        <a href="#" class="result-box__img">
+                            <span class="result-box__img-overlay"></span>
+                            <img src="./img/res1.jpeg" alt="">
+                            <div class="result-box__img-icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 7.5A1.5 1.5 0 0040.5 6h-33A1.5 1.5 0 006 7.5v33A1.5 1.5 0 007.5 42H18v-3H9V9h30v30h-7.76L20.8 28.56l-2.12 2.12L30 42h10.5a1.5 1.5 0 001.5-1.5v-33z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 9.5A1.5 1.5 0 0040.5 8h-10A1.5 1.5 0 0029 9.5v10a1.5 1.5 0 003 0v-7a14 14 0 11-8-2.5V7a17 17 0 1010.92 4h5.58A1.5 1.5 0 0042 9.5z" data-name="360"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M39.16 23.19a1.48 1.48 0 00-.51-.48l-.11-.09L13.32 6.24l-.16-.08h-.09l-.18-.06h-.11L12.6 6H12.19a1.49 1.49 0 00-1 .65 1.47 1.47 0 00-.1.2 1.46 1.46 0 00-.07.21v.08a1.48 1.48 0 000 .2V40.52a1.49 1.49 0 000 .2v.08a1.46 1.46 0 00.07.21 1.48 1.48 0 00.11.21 1.49 1.49 0 001 .65H12.9l.18-.06h.08l.16-.08 25.41-16.5a1.5 1.5 0 00.43-2.04zM14 10.26L35.16 24 14 37.74z"></path></svg>
+                            </div>
+                            <span class="result-box__new">
+                                Nieuw
+                            </span>
+                        </a>
+                        <div class="result__box__info">
+                            <div class="result__box__name">Kersenlaan 42</div>
+                            <div class="result__box__address">7322 SE Apeldoorn</div>
+                            <div class="result__box__price">€ 325.000 k.k.</div>
+                            <div class="result__box__detail">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M38.5 32.25v-16.5a5 5 0 10-6.25-6.25h-16.5a5 5 0 10-6.25 6.25v16.5a5 5 0 106.25 6.25h16.5a5 5 0 106.25-6.25zm-6.25 3.25h-16.5a5 5 0 00-3.25-3.25v-16.5a5 5 0 003.25-3.25h16.5a5 5 0 003.25 3.25v16.5a5 5 0 00-3.25 3.25zM37 9a2 2 0 11-2 2 2 2 0 012-2zM11 9a2 2 0 11-2 2 2 2 0 012-2zm0 30a2 2 0 112-2 2 2 0 01-2 2zm26 0a2 2 0 112-2 2 2 0 01-2 2z"></path></svg>
+                                    <span>92 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M43 5.5A1.5 1.5 0 0041.5 4h-35A1.5 1.5 0 005 5.5v37A1.5 1.5 0 006.5 44h35a1.5 1.5 0 001.5-1.5zm-35 9h13v5a1.5 1.5 0 001.5 1.5H30v20H8zm25 5a1.5 1.5 0 00-1.5-1.5H24v-5a1.5 1.5 0 00-1.5-1.5H8V7h32v34h-7z"></path></svg>
+                                    <span>136 m²</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M11 20l-3.999 5.999h33.998L37 20h3l3.999 5.999L44 26v9.5a1.5 1.5 0 01-1.5 1.5H39v1.5a1.5 1.5 0 01-3 0V37H12v1.5a1.5 1.5 0 01-3 0V37H5.5A1.5 1.5 0 014 35.5V26l.001-.001L8 20h3zm30 9H7v5h34v-5zM38.5 8A1.5 1.5 0 0140 9.5V20l-9-.001V21.5a1.5 1.5 0 01-1.5 1.5h-11a1.5 1.5 0 01-1.5-1.5v-1.501L8 20V9.5A1.5 1.5 0 019.5 8h29zM28 17h-8v3h8v-3zm9-6H11v5.999h6V15.5a1.5 1.5 0 011.5-1.5h11a1.5 1.5 0 011.5 1.5v1.499h6V11z"></path></svg>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="flex-0 mr-2"><path d="M23.675 12.891l-6.852 13.063 7.032 1.628.492 7.872 7.31-13.373-7.51-1.63-.472-7.56zm2.45-8.897L27 18l6.274 1.362c1.62.351 2.295 1.818 1.5 3.274l-11.82 21.618c-.529.968-1.01.853-1.079-.248L21 30l-5.714-1.323c-1.612-.373-2.3-1.868-1.529-3.337L25.073 3.767c.511-.975.983-.874 1.052.227z"></path></svg>
+                                    <span>C</span>
+                                </div>
+                            </div>
+                            <a href="#" class="result-box__link">Mulderij Makelaardij & Taxateur O.Z.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-links__flex">
+            <div class="footer__links">
+                <div class="footer__links__title">Snel naar</div>
+                <a href="#">Verkoop je huis op funda</a>
+                <a href="#">Check je woningwaarde</a>
+                <a href="#">Zoek een NVM-makelaar</a>
+                <a href="#">Volg de woningmarkt: funda Index</a>
+                <a href="#">Blader door al het aanbod</a>
+                <a href="#">Vraag & antwoord</a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__links__title">Inzichten & inspiratie</div>
+                <a href="#">Inloggen Mijn Huis</a>
+                <a href="#">Alles over een huis kopen</a>
+                <a href="#">Alles over een huis verkopen</a>
+                <a href="#">Alles over je huis aanpakken</a>
+                <a href="#">Tips voor zoeken op funda</a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__links__title">Voor makelaars</div>
+                <a href="#">Meld je aan bij funda</a>
+                <a href="#">Plaats en promoot objecten</a>
+                <a href="#">Promoot je kantoor</a>
+                <a href="#">Verbreed je kennis</a>
+                <a href="#">Inloggen funda desk</a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__links__title">Meer funda</div>
+                <a href="#">Over funda</a>
+                <a href="#">Werken bij funda</a>
+                <a href="#">Voor adverteerders</a>
+                <a href="#">Redactioneel beleid</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="container footer__menu">
+            <div class="footer__media">
+                <a href="#" class="footer__media__box">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M19 17.08h-4.23v6.84H19V44h8V23.83h5.62l.6-6.75H27v-3.85c0-1.59.32-2.22 1.86-2.22h4.36V4h-5.57c-6 0-8.7 2.64-8.7 7.69z"></path></svg>
+                </a>
+                <a href="#" class="footer__media__box">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M 28.570312 20.34375 L 46.441406 0 L 42.210938 0 L 26.683594 17.660156 L 14.292969 0 L 0 0 L 18.742188 26.707031 L 0 48.039062 L 4.234375 48.039062 L 20.617188 29.386719 L 33.707031 48.039062 L 48 48.039062 M 5.761719 3.125 L 12.265625 3.125 L 42.207031 45.066406 L 35.699219 45.066406 "></path></svg>
+                </a>
+                <a href="#" class="footer__media__box">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M24 7.61c5.34 0 6 0 8.08.12 5.42.25 8 2.82 8.2 8.2.1 2.11.11 2.74.11 8.08s0 6-.11 8.08c-.25 5.37-2.77 8-8.2 8.2-2.11.1-2.74.12-8.08.12s-6 0-8.08-.12c-5.43-.25-8-2.83-8.2-8.2C7.62 30 7.6 29.34 7.6 24s0-6 .12-8.08c.25-5.38 2.77-8 8.2-8.2 2.08-.09 2.74-.11 8.08-.11zM24 4c-5.43 0-6.11 0-8.24.12-7.27.33-11.31 4.36-11.64 11.63C4 17.89 4 18.57 4 24s0 6.11.12 8.25c.33 7.26 4.36 11.3 11.63 11.63 2.13.1 2.81.12 8.25.12s6.11 0 8.25-.12c7.26-.33 11.3-4.36 11.63-11.63.12-2.14.12-2.82.12-8.25s0-6.11-.12-8.24c-.33-7.26-4.36-11.3-11.63-11.64C30.11 4 29.43 4 24 4zm0 9.73A10.27 10.27 0 1034.27 24 10.27 10.27 0 0024 13.73zm0 16.94A6.67 6.67 0 1130.67 24 6.67 6.67 0 0124 30.67zm10.68-19.74a2.4 2.4 0 102.4 2.4 2.4 2.4 0 00-2.4-2.4z"></path></svg>
+                </a>
+                <a href="#" class="footer__media__box">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M36.69 9.31c-6-.41-19.38-.41-25.38 0C4.81 9.75 4 13.67 4 24s.81 14.25 7.31 14.69c6 .41 19.38.41 25.38 0C43.19 38.25 44 34.33 44 24s-.81-14.25-7.31-14.69zM19 30.67V17.33L32.33 24z"></path></svg>
+                </a>
+                <a href="#" class="footer__media__box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M4.8 17.33h8.25V44H4.8z"></path><ellipse cx="8.89" cy="8.92" rx="4.88" ry="4.92"></ellipse><path d="M34.29 16.52a9.3 9.3 0 00-8 4.4v-3.59h-7.95V44h7.92V30c0-3.75 1.73-6 5-6 3 0 4.49 2.14 4.49 6v14H44V27.12c0-7.12-4.06-10.6-9.71-10.6z"></path></svg>
+                </a>
+            </div>
+
+            <div class="footer__copyright">
+                <div class="footer__copyright__text">© 2001-2024 funda</div>
+                <div class="footer__privacy">
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Voorwaarden</a>
+                </div>
+            </div>
+
+            <div class="footer__language">
+                <span>Taal</span>
+                <select>
+                    <option value="en">
+                        English
+                    </option>
+                    <option value="nl">
+                        Nederlands
+                    </option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $( document ).ready(function() {
+            $('#search-value').keyup(function(){
+                $('.suggestions').css('display', 'block');
+
+                if (!$('#search-value').val()) {
+                    $('.suggestions').css('display', 'none');
+                }
+            });
+
+            $(".filters__meer").on("click", function() {  
+                /*$('.filters__meer').text('Toon minder');*/
+                $(".filters-checkbox__box").toggleClass('active');
+                
+                }); 
+
+            $(".meer-show").on("click", function() {   
+                $(".search-form__navigation").toggleClass('active');
+                $(".meer-show").css('display', 'none');
+            }); 
+
+
+        });
+    </script>
+</body>
+</html>

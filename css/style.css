@@ -61,11 +61,12 @@ body {
     display: block;
     color: #fff;
     padding: 18px 12px;
+    line-height: 18px;
 }
 
-/*.header__navigation a:hover {
-    background-color: #de9000;
-}*/
+.header__navigation a:hover {
+    background-color: #4c9024;
+}
 
 .header__right-button {
     color: #fff;
@@ -84,9 +85,9 @@ body {
     justify-content: space-between;
 }
 
-/*.header__right-button:hover {
-    background-color: #de9000;
-}*/
+.header__right-button:hover {
+    background-color: #4c9024;
+}
 
 .header__right {
     display: flex;
