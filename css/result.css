@@ -183,6 +183,13 @@ body {
     cursor: pointer;
 }
 
+.association__button {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+}
+
 .result-box__img-overlay {
     position: absolute;
     width: 100%;
@@ -424,6 +431,11 @@ body {
     color: #fff;
 }
 
+.paginations-buttons a:hover {
+    background: var(--mainColor);
+    color: #fff;
+}
+
 .filter__save {
     width: 49%;
     margin-top: 10px;
@@ -435,9 +447,13 @@ body {
 
 .filter__save select {
     border: none;
-    text-align: center;
+    text-align: left;
     color: var(--linkColor);
     position: relative;
+}
+
+.filter__save select option[selected] {
+    text-align: center;
 }
 
 .filter__save-select {
@@ -445,7 +461,7 @@ body {
     border-left: 1px solid #e6e2e2;
 }
 
-/*.filter__save-select::before {
+.filter__save-select::before {
     content: ' ';
     position: absolute;
     background: url(../img/wop.svg) center center no-repeat;
@@ -453,7 +469,8 @@ body {
     height: 20px;
     top: 8px;
     left: 115px;
-}*/
+}
+
 
 .filter__save-select {
     cursor: pointer;
@@ -482,6 +499,12 @@ body {
     padding-left: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+    .filter__save-select::before {
+        left: 15px;
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -494,7 +517,14 @@ body {
     .result__filter-search {
         justify-content: space-between;
     }
+    .filter__save-select::before {
+        left: 15px;
+    }
 
+    .filter-search__box svg {
+        position: absolute;
+        left: 15px;
+    }
     .result__filter-search .filter__save:not(:first-child) {
         border-left: 1px solid #e6e2e2;
     }
