@@ -445,9 +445,38 @@
                             </div>
                         </div>
                         <div class="result__filter-search">
-                            <div class="filter-search__box">
+                            <div class="filter-search__box filter__save">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071b3" role="presentation" viewBox="0 0 48 48" data-id-filter-button="" class="mr-2 inline-flex"><path fill-rule="evenodd" d="M14.5 16a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm0 3a5.502 5.502 0 005.293-4H40.5a1.5 1.5 0 000-3H19.793a5.502 5.502 0 00-10.586 0H7.5a1.5 1.5 0 000 3h1.707a5.502 5.502 0 005.293 4zm19 7a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm5.293-1a5.502 5.502 0 01-10.586 0H7.5a1.5 1.5 0 010-3h20.707a5.502 5.502 0 0110.586 0H40.5a1.5 1.5 0 010 3h-1.707zM17 34.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm2.793 1.5a5.502 5.502 0 01-10.586 0H7.5a1.5 1.5 0 010-3h1.707a5.502 5.502 0 0110.586 0H40.5a1.5 1.5 0 010 3H19.793z" clip-rule="evenodd"></path></svg>
                                 <span>Filters</span>
+                            </div>
+
+                            <div class="filter__save filter__save-bewar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="mx-2 h-11 py-2"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 8.5C11.5 7.39543 12.3954 6.5 13.5 6.5H33.5C34.6046 6.5 35.5 7.39543 35.5 8.5V38.9306C35.5 40.6275 33.5197 41.5534 32.2175 40.4653L23.7986 33.4301L14.7349 40.545C13.4225 41.5753 11.5 40.6403 11.5 38.9719V8.5ZM14.5 9.5V36.9156L22.9019 30.3201C23.4591 29.8827 24.2464 29.8947 24.79 30.349L32.5 36.7918V9.5H14.5Z"></path></svg>
+                                <span>
+                                    Bewaar zoekopdracht
+                                </span>
+                            </div>
+
+                            <div class="filter__save filter__save-select">
+                                <select><option name="relevancy" value="relevancy" class="text-blue-2">
+                                    Relevantie
+                                </option><option name="date_down" value="date_down" class="text-blue-2">
+                                    Datum - nieuw naar oud
+                                </option><option name="date_up" value="date_up" class="text-blue-2">
+                                    Datum - oud naar nieuw
+                                </option><option name="price_up" value="price_up" class="text-blue-2">
+                                    Prijs - laag naar hoog
+                                </option><option name="price_down" value="price_down" class="text-blue-2">
+                                    Prijs - hoog naar laag
+                                </option><option name="floor_area_down" selected="selected" value="floor_area_down" class="text-blue-2">
+                                    Woonopp
+                                </option><option name="plot_area_down" value="plot_area_down" class="text-blue-2">
+                                    Perceelopp. - hoog naar laag
+                                </option><option name="city_up" value="city_up" class="text-blue-2">
+                                    Plaats - A tot Z
+                                </option><option name="postal_code_up" value="postal_code_up" class="text-blue-2">
+                                    Postcode - 1000 AA tot 9999 ZZ
+                                </option></select>
                             </div>
                         </div>
                     </div>
@@ -508,8 +537,14 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M42 9.5A1.5 1.5 0 0040.5 8h-10A1.5 1.5 0 0029 9.5v10a1.5 1.5 0 003 0v-7a14 14 0 11-8-2.5V7a17 17 0 1010.92 4h5.58A1.5 1.5 0 0042 9.5z" data-name="360"></path></svg>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" role="presentation" viewBox="0 0 48 48" class="mr-[0.1rem] h-5 w-5 text-white first:ml-[0.2rem] last:mr-[0.2rem]"><path d="M39.16 23.19a1.48 1.48 0 00-.51-.48l-.11-.09L13.32 6.24l-.16-.08h-.09l-.18-.06h-.11L12.6 6H12.19a1.49 1.49 0 00-1 .65 1.47 1.47 0 00-.1.2 1.46 1.46 0 00-.07.21v.08a1.48 1.48 0 000 .2V40.52a1.49 1.49 0 000 .2v.08a1.46 1.46 0 00.07.21 1.48 1.48 0 00.11.21 1.49 1.49 0 001 .65H12.9l.18-.06h.08l.16-.08 25.41-16.5a1.5 1.5 0 00.43-2.04zM14 10.26L35.16 24 14 37.74z"></path></svg>
                             </div>
-                            <span class="result-box__new">
-                                Nieuw
+                            <span class="result-box_new-box">
+                                <span class="result-box__new">
+                                    Nieuw
+                                </span>
+
+                                <span class="result-box__new orange">
+                                    Nieuw
+                                </span>
                             </span>
                         </a>
                         <div class="result__box__info">
@@ -662,6 +697,21 @@
                             </div>
                             <a href="#" class="result-box__link">Mulderij Makelaardij & Taxateur O.Z.</a>
                         </div>
+                    </div>
+                    <div class="paginations">
+                        <a href="#" class="paginations-text_button paginations-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#666" role="presentation" viewBox="0 0 48 48" data-v-b8a43de0=""><path d="M36.5 22.5H15.13l8-8A1.5 1.5 0 1021 12.34L10.47 22.91v.06a1.5 1.5 0 00-.27.41v.08a1.48 1.48 0 00-.1.5 1.48 1.48 0 00.1.5v.08a1.51 1.51 0 00.27.41v.06L21 35.66a1.5 1.5 0 002.12-2.12l-8-8H36.5a1.5 1.5 0 100-3z"></path></svg>
+                            <span>Vorige</span>
+                        </a>
+                        <div class="paginations-buttons">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                        <a href="#" class="paginations-text_button paginations-next">
+                            <span>Volgende</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071b3" role="presentation" viewBox="0 0 48 48" data-v-b8a43de0=""><path d="M37.9 24.52A1.48 1.48 0 0038 24a1.48 1.48 0 00-.1-.5v-.08a1.51 1.51 0 00-.3-.42v-.06L27 12.34a1.5 1.5 0 10-2.12 2.12l8 8H11.5a1.5 1.5 0 000 3h21.37l-8 8a1.5 1.5 0 002.13 2.2l10.53-10.57v-.06a1.51 1.51 0 00.27-.41z"></path></svg>
+                        </a>
                     </div>
                 </div>
             </div>
