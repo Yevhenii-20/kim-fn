@@ -304,3 +304,131 @@ body {
 .top__result__detail span {
     display: block;
 }
+
+.result__quantity {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e2e2;
+    font-weight: 400;
+}
+
+.result__quantity-text {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.result__search-box {
+    background: #fff;
+    border: 1px solid #e6e2e2;
+    border-radius: 5px;
+}
+
+.rs-box-button {
+    line-height: 0;
+    position: absolute;
+    right: 12px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.result__search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.rs-box-input {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.rs-box-suggestions-box {
+    display: inline-flex;
+    align-items: center;
+    background: #e6e2e2;
+    border-radius: 5px;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.rs-box-suggestions {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.close-suggestions {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.result__search {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e2e2;
+    margin-bottom: 20px;
+}
+
+.result-suggestions {
+    border-radius: 5px;
+    top: 42px;
+    z-index: 9;
+    border: 1px solid #d8dee0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .result__filters {
+        display: none;
+    }
+
+    .result__items {
+        width: 100%;
+    }
+
+    .result__box {
+        flex-direction: column;
+    }
+
+    .result-box__img, .result-box__img img {
+        width: 100%;
+    }
+    
+    .result__box {
+        align-items: flex-start;
+    }
+    
+    .result__box__info {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    .result__box__detail {
+        flex-wrap: wrap;
+    }
+
+    .result__box__detail > div {
+        margin: 5px;
+    }
+
+    .top__result-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .top__result {
+		overflow: hidden;
+		overflow-x: auto;
+    }
+
+    .top__result-box {
+        min-width: 250px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
