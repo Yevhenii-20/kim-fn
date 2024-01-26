@@ -417,6 +417,38 @@ body {
     margin: 0 auto;
 }
 
+.breadrcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.breadrcrumbs-flex {
+    display: flex;
+    align-items: center;
+}
+
+.breadrcrumbs-item {
+    position: relative;
+    margin-right: 25px;
+    color: #666;
+    font-weight: 400;
+}
+
+.breadrcrumbs-item::before {
+    content: ' ';
+    position: absolute;
+    background: url(../img/bread.svg) center center no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    right: -19px;
+    top: 1.5px;
+}
+
+.breadrcrumbs-item:last-child:before {
+    display: none;
+}
+
 @media screen and (max-width:768px) {
     .detail__flex {
         flex-direction: column;
@@ -490,6 +522,14 @@ body {
 
     .object-deburt__box a img {
         max-width: 100%;
+    }
+
+    .breadrcrumbs-flex a {
+        display: none;
+    }
+
+    .breadrcrumbs-flex a:nth-child(1) {
+        display: block;
     }
 
 }
