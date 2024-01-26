@@ -449,13 +449,133 @@ body {
     display: none;
 }
 
+.object-post__house {
+    background: #e6f2f7;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.post-house__title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.post-house__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-house__button {
+    display: inline-block;
+    background: var(--mainColor);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.post-house_block {
+    width: 70%;
+}
+
+.similar-object__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.similar-object__box {
+    width: 32%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.similar-object__box img {
+    max-width: 100%;
+}
+
+.similar-object__name {
+    
+    color: #333;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.similar-object__address {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #999;
+}
+
+.similar-object__price {
+    font-weight: 600;
+    color: #333;
+}
+
+.object-info__settings {
+    display: flex;
+    margin-top: 20px;
+}
+
+.object-info__settings div {
+    color: #999;
+    background-color: #fff;
+    padding: 13px;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.object-info__settings div.active {
+    border-bottom: 2px solid var(--mainColor);
+    background: #e5f1f8;
+    color: var(--mainColor);
+}
+
+.object-info__settings div:hover {
+    border-bottom: 2px solid var(--mainColor);
+    background: #e5f1f8;
+    color: var(--mainColor);
+}
+
 @media screen and (max-width:768px) {
     .detail__flex {
         flex-direction: column;
     }
 
+    .similar-object__flex {
+        overflow: hidden;
+        overflow-x: auto;
+    }
+
+    .similar-object__box {
+        min-width: 250px;
+        margin-right: 15px;
+    }
+
     .detail-info__box, .object__contact {
         width: 100%;
+    }
+
+    .object-post__house {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .post-house_block {
+        order: 2;
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .post-house__button {
+        width: 100%;
+        text-align: center;
     }
 
     .object__contact {
