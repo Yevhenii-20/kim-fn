@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <header class="header">
@@ -43,6 +44,40 @@
     </header>
 
     <main>
+        <section class="gallery-section">
+            <div class="gallery">
+    
+                <div class="image-container">
+            
+                    <a href="./img/im1.jpeg">
+                        <img src="./img/im1.jpeg" alt="">
+                    </a>
+        
+                    <div class="image-container-column">
+                        <a href="./img/img2.jpeg">
+                            <img src="./img/img2.jpeg" alt="">
+                        </a>
+            
+                        <a href="./img/im3.jpeg">
+                            <img src="./img/im3.jpeg" alt="">
+                        </a>
+                    </div>
+        
+                    <div class="image-container-column">
+                        <a href="./img/img2.jpeg">
+                            <img src="./img/img2.jpeg" alt="">
+                        </a>
+            
+                        <a href="./img/im3.jpeg">
+                            <img src="./img/im3.jpeg" alt="">
+                        </a>
+                    </div>
+                    
+            
+                </div>
+            
+            </div>
+        </section>
         <section class="detail__section">
             <div class="container detail__flex">
                 <div class="detail-info__box">
@@ -358,8 +393,49 @@
             </div>
         </div>
     </footer>
+    
+    
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script>
+    
+    $(document).ready(function(){
+    
+        $('.buttons').click(function(){
+    
+            $(this).addClass('active').siblings().removeClass('active');
+    
+            var filter = $(this).attr('data-filter')
+    
+            if(filter == 'all'){
+                $('.image').show(400);
+            }else{
+                $('.image').not('.'+filter).hide(200);
+                $('.image').filter('.'+filter).show(400);
+            }
+    
+        });
+    
+        $('.gallery').magnificPopup({
+    
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+    
+        });
+    
+    });
+    
+    </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
 
     <script>
         $( document ).ready(function() {
@@ -380,6 +456,8 @@
                     $(this).parent().css('display', 'none');
                 }); 
             }); 
+
+
 
             
 
