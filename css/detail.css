@@ -543,6 +543,37 @@ body {
     color: var(--mainColor);
 }
 
+.object-info__list-label {
+    background: var(--mainColor);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0px!important;
+    color: #fff;
+    position: relative;
+    margin-right: 20px;
+}
+
+.object-info__list-label span {
+    padding-right: 0px;
+}
+
+.object-info__list-label::before {
+    position: absolute;
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 13px 13px 13px;
+    border-color: transparent transparent var(--mainColor) transparent;
+    transform: rotate(90deg);
+    right: -19.6px;
+}
+
+
 @media screen and (max-width:768px) {
     .detail__flex {
         flex-direction: column;
