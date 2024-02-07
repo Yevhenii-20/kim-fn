@@ -149,10 +149,16 @@
                             <div class="object-info__list-item">
                                 <div>Vraagprijs per m²</div>
                                 <div class="object-info__list-right">
-                                    <span>€ 5.036</span>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
-                                    </a>
+                                    <span class="list-right__info">
+                                        € 5.036
+                                        <a href="#" class="info-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
+                                        </a>
+                                        <div class="info-popup">
+                                            De vraagprijs per m² wordt berekend door de vraagprijs van de woning (€ 795.000) te delen door de gebruiksoppervlakte wonen (173 m²). Hierbij wordt geen rekening gehouden met de perceeloppervlakte en eventuele bijgebouwen.
+                                            <a href="#">Meer info</a>
+                                        </div>
+                                    </span>
                                 </div>
                             </div>
                             <div class="object-info__list-item">
@@ -183,10 +189,12 @@
                             <div class="object-info__list-item">
                                 <div class="object-info__sublist">Vraagprijs per m²</div>
                                 <div class="object-info__list-right">
-                                    <span>€ 5.036</span>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
-                                    </a>
+                                    <span class="list-right__info">
+                                        € 5.036
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                             <div class="object-info__list-item">
@@ -214,10 +222,12 @@
                             <div class="object-info__list-item">
                                 <div>Vraagprijs per m²</div>
                                 <div class="object-info__list-right">
-                                    <span>€ 5.036</span>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
-                                    </a>
+                                    <span class="list-right__info">
+                                        € 5.036
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="fd-display-block"><rect width="3" height="17" x="22.5" y="18" rx="1.5" ry="1.5"></rect><path d="M24 16a1.5 1.5 0 000-3 1.5 1.5 0 000 3z"></path><path d="M24 4a20 20 0 1020 20A20 20 0 0024 4zm0 37a17 17 0 1117-17 17 17 0 01-17 17z"></path></svg>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                             <div class="object-info__list-item">
@@ -444,6 +454,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed-btn">
+        <a href="#">Contact us</a>
+    </div>
     
     
     <!-- jquery cdn link  -->
@@ -522,6 +536,13 @@
                 $(".result__filters").removeClass('active');
              }); 
 
+             $(".info-button").on("click", function(e) {  
+                e.preventDefault();
+                $(".info-popup").toggleClass('active');
+             }); 
+
+             
+
 
              $(".header-mobile__menu").on("click", function() {   
                 $(".header__navigation").toggleClass('active');
@@ -534,6 +555,12 @@
                 if ( !div.is(e.target) // если клик был не по нашему блоку
                     && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
                         $(".result__filters").removeClass('active');
+                }
+
+                var info_no = $( ".info-popup" ); // тут указываем ID элемента
+                if ( !info_no.is(e.target) // если клик был не по нашему блоку
+                    && info_no.has(e.target).length === 0 ) { // и не по его дочерним элементам
+                        $(".info-popup").removeClass('active');
                 }
             });
              
