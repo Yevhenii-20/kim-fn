@@ -415,6 +415,30 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
+}
+
+.gallery-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-button__share {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.gallery-button__share:hover {
+    border-radius: 3px;
 }
 
 .breadrcrumbs {
@@ -638,9 +662,56 @@ body {
     padding: 10px;
 }
 
+.right-button {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.right-button a {
+    color: var(--linkColor);
+}
+
+.gallery-navigation {
+    border-bottom: 2px solid var(--mainColor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.gallery-navigation__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-navigation__button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.gallery-navigation__left {
+    display: flex;
+    align-items: center;
+}
+
+.gallery-navigation__title {
+    color: var(--mainColor);
+    padding-left: 7px;
+}
+
+.gallery-navigation__title > span {
+    color: #aaa8a8;
+}
+
 @media screen and (max-width:768px) {
     .detail__flex {
         flex-direction: column;
+    }
+
+    .gallery-navigation {
+        display: none;
     }
 
     .fixed-btn {
