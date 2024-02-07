@@ -628,10 +628,31 @@ select {
 
 
 
+/* SUG BLOCK */
 
 
 
+.rs-box-suggestions-box {
+    display: inline-flex;
+    align-items: center;
+    background: #e6e2e2;
+    border-radius: 5px;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
 
+.rs-box-suggestions {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.close-suggestions {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
 
 
 

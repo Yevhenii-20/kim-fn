@@ -225,6 +225,12 @@
                                 <input type="submit" name="submit" value="ZOEK">
                             </div>
                         </form>
+                        <div class="rs-box-suggestions">
+                            <!--<div class="rs-box-suggestions-box">
+                                <span>AR</span>
+                                <span class="close-suggestions">x</span>
+                            </div>!-->
+                        </div>
                     </div>
                     <div class="search-form__filter">
                         <span>Laatste zoekopdracht:</span>
@@ -459,6 +465,17 @@
                     $('.suggestions').css('display', 'none');
                 }
             });
+
+
+            $(".suggestion-link").on("click", function() {   
+                $('.suggestions').css('display', 'none');
+                $('#search-value').val('');   
+                $('.rs-box-suggestions').append("<div class='rs-box-suggestions-box'><span>AR</span><span class='close-suggestions'>x</span></div>");
+
+                $(".close-suggestions").on("click", function() {   
+                    $(this).parent().css('display', 'none');
+                }); 
+            }); 
 
             $(".header-mobile__menu").on("click", function() {   
                 $(".header__navigation").toggleClass('active');
