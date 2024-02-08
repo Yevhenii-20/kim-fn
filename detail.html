@@ -54,7 +54,7 @@
         <section class="gallery-section">
             <div class="gallery">
                 <div class="gallery-button">
-                    <div class="gallery-button__share">
+                    <div class="gallery-button__share button-share">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#59c21d" role="presentation" viewBox="0 0 48 48"><path d="M36 31.3a6 6 0 00-4.81 2.42l-13.51-7.8a5.92 5.92 0 00.08-3.58l13.7-7.91a6 6 0 10-1.33-2.69l-13.89 8a6 6 0 10-.2 8.68l14 8.09A6 6 0 1036 31.3zm0-23.78a3 3 0 11-3 3 3 3 0 013-3zM12 27a3 3 0 113-3 3 3 0 01-3 3zm24 13.3a3 3 0 113-3 3 3 0 01-3 3z"></path></svg>
                     </div>
                     <div class="gallery-button__share">
@@ -519,6 +519,22 @@
     <div class="fixed-btn">
         <a href="#">Contact us</a>
     </div>
+
+    <div class="popup popup-share">
+        <div class="popup-overlay"></div>
+        <div class="popup-body">
+            <div class="close-popup">x</div>
+            <div class="popup-share__title">Delen</div>
+            <div class="popup-share__media">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="mr-2"><path d="M19 17.08h-4.23v6.84H19V44h8V23.83h5.62l.6-6.75H27v-3.85c0-1.59.32-2.22 1.86-2.22h4.36V4h-5.57c-6 0-8.7 2.64-8.7 7.69z"></path></svg>
+                <span>Facebook</span>
+            </div>
+            <div class="popup-share__media">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="mr-2"><path d="M38.17 9.84a19.92 19.92 0 00-31.35 24L4 44.19l10.56-2.77a19.9 19.9 0 009.52 2.42 19.92 19.92 0 0014.09-34zM24.08 40.48a16.53 16.53 0 01-8.43-2.31l-.6-.36-6.27 1.65 1.67-6.11-.39-.63a16.55 16.55 0 1114 7.76z"></path><path d="M34.12 28.67c-.12-.21-.46-.33-1-.58s-2.94-1.45-3.4-1.62-.79-.25-1.12.25-1.29 1.62-1.58 2-.58.37-1.08.12a13.59 13.59 0 01-4-2.47 15 15 0 01-2.77-3.45c-.29-.5 0-.77.22-1s.5-.58.75-.87a3.4 3.4 0 00.5-.83.92.92 0 000-.87c-.12-.25-1.12-2.7-1.53-3.7s-.81-.84-1.12-.85h-1a1.83 1.83 0 00-1.33.62A5.58 5.58 0 0014 19.49a9.68 9.68 0 002 5.15c.25.33 3.51 5.36 8.5 7.51a28.57 28.57 0 002.84 1 6.82 6.82 0 003.13.2c1-.14 2.94-1.2 3.36-2.37a4.16 4.16 0 00.29-2.31z"></path></svg>
+                <span>Whats up</span>
+            </div>
+        </div>
+    </div>
     
     
     <!-- jquery cdn link  -->
@@ -594,6 +610,10 @@
                 }); 
             }); 
 
+           
+
+
+            
 
 
             
@@ -635,6 +655,26 @@
                 $(".info-popup").toggleClass('active');
              }); 
             });
+
+
+
+            $(".button-share").on("click", function() {   
+                $('.popup-share').css('display', 'block');
+
+                $(document).mouseup( function(e){ // событие клика по веб-документу
+                var popup_close = $( ".popup-body" ); // тут указываем ID элемента
+                if ( !popup_close.is(e.target) // если клик был не по нашему блоку
+                    && popup_close.has(e.target).length === 0 ) { // и не по его дочерним элементам
+                        $(".popup").css('display', 'none');
+                }
+            });
+            }); 
+
+            $(".close-popup").on("click", function() {   
+                $('.popup').css('display', 'none');
+            }); 
+
+
 
             $(".info-button").on("click", function(e) {  
                 e.preventDefault();
