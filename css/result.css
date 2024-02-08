@@ -413,7 +413,7 @@ body {
 .paginations {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
@@ -514,7 +514,7 @@ body {
 .filter__save-bewar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     color: var(--linkColor);
     cursor: pointer;
 }
