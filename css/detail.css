@@ -684,12 +684,20 @@ body {
     align-items: center;
 }
 
-.gallery-navigation__button {
+.gallery-navigation__button  {
     display: flex;
     align-items: center;
     cursor: pointer;
     margin-right: 15px;
 }
+
+.gallery-navigation__button a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
 
 .gallery-navigation__left {
     display: flex;

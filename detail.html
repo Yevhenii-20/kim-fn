@@ -96,11 +96,14 @@
                 <div class="container gallery-navigation__flex">
                     <div class="gallery-navigation__left">
                         <div class="gallery-navigation__button gallery-navigation__foto">
-                            <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 48 48" role="img" fill="#59c21d" ><path d="M40.5 14h-29a1.5 1.5 0 00-1.5 1.5v25a1.5 1.5 0 001.5 1.5h29a1.5 1.5 0 001.5-1.5v-25a1.5 1.5 0 00-1.5-1.5zM13 17h26v22H13z"></path><path d="M7 11h26v1h3V9.5A1.5 1.5 0 0034.5 8h-29A1.5 1.5 0 004 9.5v25A1.5 1.5 0 005.5 36H8v-3H7z"></path></svg>
-                            <span class="gallery-navigation__title">
-                                Foto's
-                                <span>5</span>
-                            </span>
+                            <a href="./img/im1.jpeg">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 48 48" role="img" fill="#59c21d" ><path d="M40.5 14h-29a1.5 1.5 0 00-1.5 1.5v25a1.5 1.5 0 001.5 1.5h29a1.5 1.5 0 001.5-1.5v-25a1.5 1.5 0 00-1.5-1.5zM13 17h26v22H13z"></path><path d="M7 11h26v1h3V9.5A1.5 1.5 0 0034.5 8h-29A1.5 1.5 0 004 9.5v25A1.5 1.5 0 005.5 36H8v-3H7z"></path></svg>
+                                <span class="gallery-navigation__title">
+                                    Foto's
+                                    <span>5</span>
+                                </span>
+                            </a>
+                            <a href="./img/img2.jpeg"></a>
                         </div>
 
                         <div class="gallery-navigation__button gallery-navigation__plattegrond">
@@ -552,6 +555,17 @@
             }
     
         });
+
+        $('.gallery-navigation__left').magnificPopup({
+    
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+
+        });
+
     
     });
     
