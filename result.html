@@ -46,6 +46,11 @@
        <section class="section__result">
             <div class="container result__flex">
                 <div class="result__filters">
+                    <div class="result__filters__button">
+                        <a href="#">
+                            Toon 66.780 resultaten
+                        </a>
+                    </div>
                     <span class="close-filters">x</span>
                     <div class="result-filters__title">Filters</div>
                     <div class="result-filters__scroll">
@@ -836,11 +841,13 @@
             $(".filter-search__box").on("click", function() {  
                 /*$('.filters__meer').text('Toon minder');*/
                 $(".result__filters").addClass('active');
+                $('body').css('overflow', 'hidden');
              }); 
 
              $(".close-filters").on("click", function() {  
                 /*$('.filters__meer').text('Toon minder');*/
                 $(".result__filters").removeClass('active');
+                $('body').css('overflow', 'auto');
              }); 
 
 
