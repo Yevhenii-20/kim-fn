@@ -413,7 +413,7 @@ body {
 .paginations {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
 }
 
@@ -447,14 +447,17 @@ body {
 
 .filter__save select {
     border: none;
-    text-align: left;
+    text-align: center;
+    text-align-last: center;
     color: var(--linkColor);
     position: relative;
 }
 
-.filter__save select option[selected] {
-    text-align: center;
+.filter__save option {
+    text-align: left;
 }
+
+
 
 .filter__save-select {
     position: relative;
@@ -479,12 +482,13 @@ body {
 }
 .filter__save select {
     border: none;
-    text-align: left;
     color: var(--linkColor);
     position: relative;
 
     background: url(../img/arr-blue.svg);
-    background-position: 89% center;
+    /*background-position: 5% center;*/
+
+    background-position: 95% center;
     background-repeat: no-repeat;
     background-color: #fff;
     background-size: 13px;
@@ -510,7 +514,7 @@ body {
 .filter__save-bewar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--linkColor);
     cursor: pointer;
 }
